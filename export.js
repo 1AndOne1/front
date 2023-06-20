@@ -39,6 +39,7 @@ login.addEventListener('submit',async(event)=>{
   try {
     const responseLog = await fetch('http://localhost:3000/people/login', {
       method: 'POST',
+      mode: "no-cors",
       headers: {
         'Content-Type': 'application/json'
       },
