@@ -12,7 +12,6 @@ form.addEventListener('submit', async (event) => {
 
   try {
     const response = await fetch('http://localhost:3000/people/register', {
-      mode: "no-cors",
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
@@ -39,7 +38,6 @@ login.addEventListener('submit',async(event)=>{
   
   try {
     const responseLog = await fetch('http://localhost:3000/people/login', {
-      mode: "no-cors",
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
